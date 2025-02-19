@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versicherung - Beratung & Kontakt</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-blue-50 text-gray-900">
+    
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-6 text-center">
+        <h1 class="text-4xl font-bold">Ihre Versicherungsexperten</h1>
+        <p class="text-lg mt-2">Kompetente Beratung und individuelle Lösungen</p>
+    </header>
+
+    <!-- Info-Bereich -->
+    <section class="max-w-4xl mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold">Unsere Versicherungen</h2>
+        <p class="mt-3 text-gray-700">
+            Wir bieten Ihnen maßgeschneiderte Versicherungslösungen für jede Lebenssituation:
+        </p>
+        <ul class="list-disc pl-5 mt-3 text-gray-700">
+            <li>Private Haftpflichtversicherung</li>
+            <li>Hausratversicherung</li>
+            <li>Kfz-Versicherung</li>
+            <li>Lebensversicherung</li>
+        </ul>
+    </section>
+
+    <!-- Kontaktformular -->
+    <section class="max-w-4xl mx-auto my-10 p-6 bg-white shadow-lg rounded-lg">
+        <h2 class="text-2xl font-semibold text-center">Kontaktieren Sie uns</h2>
+        <form name="kontakt" method="POST" data-netlify="true" class="mt-5 flex flex-col">
+            <label class="mt-3">Ihr Name:</label>
+            <input type="text" name="name" class="p-2 border rounded" required>
+
+            <label class="mt-3">E-Mail-Adresse:</label>
+            <input type="email" name="email" class="p-2 border rounded" required>
+
+            <label class="mt-3">Telefonnummer:</label>
+            <input type="tel" name="telefon" class="p-2 border rounded">
+
+            <label class="mt-3">Gewünschte Versicherung:</label>
+            <select name="versicherung" class="p-2 border rounded">
+                <option>Private Haftpflicht</option>
+                <option>Hausrat</option>
+                <option>Kfz</option>
+                <option>Lebensversicherung</option>
+            </select>
+
+            <label class="mt-3">Wer hat Sie empfohlen?</label>
+            <input type="text" name="empfohlen_von" class="p-2 border rounded">
+
+            <label class="mt-3">Nachricht:</label>
+            <textarea name="nachricht" class="p-2 border rounded" required></textarea>
+
+            <button type="submit" class="mt-5 bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+                Anfrage senden
+            </button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-5 text-gray-600">
+        © 2025 Versicherung. Alle Rechte vorbehalten.
+    </footer>
+
+</body>
+</html>
